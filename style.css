@@ -1,4 +1,4 @@
-/* spacing on all sections */
+
 .section {
     margin-top: 4rem;
     padding-top: 4rem;
@@ -7,16 +7,16 @@
     padding-bottom: 4rem;
 }
     
-/* hero background image */
+
 .bgimage {
     height:100vh;
-    background: url("smoke.jpg");
+    background: url('images/smoke.jpg');
     background-size:cover;
     position:relative;
     padding: 0;
     margin: 0;
 }
-/* text css above hero image*/
+
 .hero_title {
     padding-top: 10rem;
     font-size: 4.5rem;
@@ -55,22 +55,23 @@
  
     cursor: pointer;
     text-align: center;
-    color: rgb(214, 75, 25);
+    color: rgb(240, 231, 228);
     background-color: #141313;
   }
-.servicesIcon {
-    font-size: 36px;
-    text-align: center;
-    width: 100%;
-}
+.infoText.card {
+ 
+    cursor: pointer;
+    text-align: left;
+    color: rgb(235, 73, 15);
+    background-color: #141313;
+  }
+
+
+
+
+
 .card-title {
     text-align: center;
-}
-.card:hover .servicesIcon {
-    color: #008000;
-}
-.servicesText:hover {
-    border: 1px solid #d65911;
 }
 
 
@@ -100,4 +101,56 @@
 
     text-align: center;
     color: #d34418;
+    padding-top: 40px;
+}
+
+
+
+
+
+.gradient-border:hover {
+  --borderWidth: 4px;
+  background: #1D1F20;
+  position: relative;
+  border-radius: var(--borderWidth);
+}
+.gradient-border:after {
+  content: '';
+  position: absolute;
+  top: calc(-1 * var(--borderWidth));
+  left: calc(-1 * var(--borderWidth));
+  height: calc(100% + var(--borderWidth) * 2);
+  width: calc(100% + var(--borderWidth) * 2);
+  background: linear-gradient(60deg, #bfda45, #e2e60c, #dd6c20, #c94219, #bb1414, #ff0000, #b32f07, #ca6a0f);
+  border-radius: calc(2 * var(--borderWidth));
+  z-index: -1;
+  -webkit-animation: animatedgradient 3s ease alternate infinite;
+          animation: animatedgradient 3s ease alternate infinite;
+  background-size: 300% 300%;
+}
+
+
+@-webkit-keyframes animatedgradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+@keyframes animatedgradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
